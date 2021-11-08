@@ -11,7 +11,7 @@
             <h1>고객지원</h1>
                 <p class="g1">지니게임은 고객의 목소리에 귀 기울입니다.<br>
                 여러분의 목소리는 지니게임을 더욱 성장시킬 수 있습니다.</p>
-            <button class="button3">무엇을 도와드릴까요?qweqe</button>
+            <button class="button3">무엇을 도와드릴까요?</button>
         </div>
     </div>
 </template>
