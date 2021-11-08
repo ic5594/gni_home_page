@@ -28,7 +28,13 @@ export default {
 }
 </script>
 <style>
- 
+    #sns{
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding-bottom: 50px;
+    }
     #sns img{
         float: left;
         
