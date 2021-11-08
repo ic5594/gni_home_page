@@ -19,11 +19,11 @@
   </div>
 </template>
 <script>
-import Imageslider from './components/Imageslider.vue'
-import Kidservice from './components/Kidservice.vue'
-import Gnianime from './components/Gnianime.vue'
-import Event from './components/Event.vue'
-import Sns from './components/Sns.vue'
+import Imageslider from './components/body/Imageslider.vue'
+import Kidservice from './components/body/Kidservice.vue'
+import Gnianime from './components/body/Gnianime.vue'
+import Event from './components/body/Event.vue'
+import Sns from './components/footer/Sns.vue'
 
 export default {
   components:{
