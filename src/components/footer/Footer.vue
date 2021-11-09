@@ -35,12 +35,16 @@ export default {
         text-align: center;
         padding-bottom: 50px;
     }
-    #sns img{
-        float: left;
-        
-    }
     #sns div{
         display: inline-block;
         padding:auto;
+    }
+    #sns img{
+        margin:20px;
+    }
+    body{
+        margin:0;
+        padding:0;
+        max-width:100%
     }
 </style>
