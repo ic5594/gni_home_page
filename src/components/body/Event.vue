@@ -1,74 +1,68 @@
 <template>
     <div id="event">
         <div id="event1">
-            <h1>이벤트</h1>
-                <p>지니게임은 다양한 이벤트로 여러분의 사랑에 보답하고자 노력하고<br>
-                있습니다.<br>
+            <span>이벤트</span>
+                <p>지니게임은 다양한 이벤트로 여러분의 사랑에 보답하고자<br> 노력하고
+                있습니다.
                 오늘도 지니게임과 함께 신나는 하루를 보내세요!</p>
-                <button class="button3">이벤트참여-></button>
+                <Button message="이벤트 참여 →"></Button>
         </div>
         <div id="event2">
-            <h1>고객지원</h1>
-                <p class="g1">지니게임은 고객의 목소리에 귀 기울입니다.<br>
+            <span>고객지원</span>
+                <p>지니게임은 고객의 목소리에 귀 기울입니다.<br>
                 여러분의 목소리는 지니게임을 더욱 성장시킬 수 있습니다.</p>
-            <button class="button3">무엇을 도와드릴까요?</button>
+                <Button message="무엇을 도와드릴까요? →"></Button>
         </div>
     </div>
 </template>
 <script>
+import Button from '../Button.vue'
 export default {
-    
+    components:{
+        'Button':Button
+    }
 }
 </script>
 <style>
-    #event1{
-        display:inline-block;
-        
-        padding-right: 3%;
-    }
-    
-    #event2{
-        display:inline-block;
-    }
     #event{
-        margin-bottom: 3%;
+        height: 320px;
+        margin-top: 30px;
+        width:100%;
     }
-    #event h1{
-        color:#424242;
-        margin-left: 50%;
-        font-weight: 300;
-        margin-top:6%;
+    #event1 {
+       display: inline-block;
+        margin:10px;
+        position: relative;
+        top:30px;
+    }
+    #event2 {
+       position: relative;
+       left:700px;
+       bottom:200px;
+    }
+    #event span,p{
+        color: #424242;
+    }
+    #event span{
+        font-size: 30px;
+        font-weight:400;
+        margin-left: 340px;
     }
     #event p{
-        color:#424242;
-        margin-left: 50%;
+        font-size: 18px;
         font-weight: 50;
-        font-size:22px;
+        letter-spacing: 2px;
+        margin-top:30px;
+        line-height: 160%;
     }
-   
-    .button3{
-        width: 140px;
-        height: 45px;
-        font-family: 'Roboto', sans-serif;
-        font-size: 15px;
-        text-transform: uppercase;
-        letter-spacing: 2.5px;
-        font-weight: 500;
-        color: #000;
-        background-color: #fff;
-        border: none;
-        border-radius: 45px;
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease 0s;
-        cursor: pointer;
-        outline: none;
-         margin-left: 330px;
-         margin-top:2%;
-  }
-  .button3:hover {
-  background-color: #2EE59D;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  color: #fff;
-  transform: translateY(-7px);
-}
+    Button{
+        margin-left: 330px;
+    }
+    #event2 Button{
+        width: 230px;
+    }
+    body{
+        margin:0;
+        padding:0;
+    }
 </style>
