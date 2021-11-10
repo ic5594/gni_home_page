@@ -1,25 +1,25 @@
 <template>
-    <div id="nav">
-      <img src="https://www.gnigame.co.kr/wp-content/uploads/2018/08/logo-white2.png" alt="logo" width="150" height="30"/>
+    <div id="header">
+      <router-link to="/" id="title"><img src="https://www.gnigame.co.kr/wp-content/uploads/2018/08/logo-white2.png" alt="logo" width="150" height="30"/></router-link>
         
           <ul class="menu">
           <li @mouseover="dropdwon = true" @mouseleave="dropdwon = false">
-            <a href="#" id="Dropdown">Games v</a>
+            <a href="#" id="games">Games v</a>
              <transition name="fade">
                <ul v-if="dropdwon" @click="dropdwon = false">
-                 <li><a href="#" class="Drop">Turnover</a></li>
-                 <li><a href="#" class="Drop">StarmonMasters</a></li>
-                 <li><a href="#" class="Drop">LegendofHero</a></li>
-                 <li><a href="#" class="Drop">MonsterOffenceHero</a></li>
-                 <li><a href="#" class="Drop">Goldrunner</a></li>
-                 <li><a href="#" class="Drop">Toyracing</a></li>
+                 <li><a class="Drop"><router-link to="/turnover">Turnover</router-link></a></li>
+                 <li><a class="Drop"><router-link to="/starmonmaster">StarmonMasters</router-link></a></li>
+                 <li><a class="Drop"><router-link to="/legendofhero">LegendofHero</router-link></a></li>
+                 <li><a class="Drop"><router-link to="/monsteroffencehero">MonsterOffenceHero</router-link></a></li>
+                 <li><a class="Drop"><router-link to="/goldrunner">Goldrunner</router-link></a></li>
+                 <li><a class="Drop"><router-link to="/toyracing">Toyracing</router-link></a></li>
                 </ul>
               </transition>
           </li>
-          <li><a>KIDS</a></li>
-          <li><a>COMICS</a></li>
-          <li><a>EVENT</a></li>
-          <li><a>FAQ</a></li>
+          <li><a class="nmenu"><router-link to="/kids">KIDS</router-link></a></li>
+          <li><a class="nmenu"><router-link to="/comics">COMICS</router-link></a></li>
+          <li><a class="nmenu"><router-link to="/event">EVENT</router-link></a></li>
+          <li><a class="nmenu"><router-link to="/faq">FAQ</router-link></a></li>
         </ul>
       
     </div>
@@ -34,53 +34,56 @@ export default{
 }
 </script>
 <style>
-#Dropdown{
-  text-decoration: none;
-  color:#999999
+#games{
+  position: relative;
+  top: 10px;
 }
 .Drop{
   text-decoration: none;
   color:#999999
 }
-#nav ul{
+#header ul{
   margin-right: 19%;
 }
-#nav a {
+#header a {
   display: block;
   text-align: center;
-  margin: .25rem;
-  padding: .5rem 1rem;
+  margin: 0.1px;
+  padding: 10px;
   text-decoration: none;
   font-weight: bold;
-  color: gray; 
-  font-size: 13px; 
+  color:#999999; 
+  font-size: 14px;
+  
 }
-
-#nav{
+li{
+  height: 41px;
+}
+#header{
   background: black;
   display: flex;
   justify-content: space-between;
-  height: 70px;
+  height: 80px;
 }
-#nav a{
+#header a{
   font-weight: 2000;
 }
-#nav img{
+#header img{
   display: inline-block;
-  margin-left:20%;
-  margin-top:1%;
+  margin-left:250%;
+  margin-top:10%;
 }
-#nav li{
+#header li{
   color:#999999
 
 }
-#nav ul li {
-        display: inline-block;
-    }
+#header ul li {
+  display: inline-block;
+}
 .menu li ul {
   position: absolute;
-  left: 0;
-  top: 45px;
+  left:0px;
+  top: 50px;
   margin: 0;
   padding: 0;
   
@@ -91,6 +94,14 @@ export default{
   position: relative;
   background: black;
   color: #999999;  
+}
+a{
+  margin-top:1px;
+}
+.menu li ul li{
+  width:95%;
+  height: 100%;
+
 }
 .menu li ul li:hover {
   background: #444;
