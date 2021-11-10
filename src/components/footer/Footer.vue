@@ -1,5 +1,5 @@
 <template>
-    <div id='sns'>
+    <div id='footer'>
         <div>
         <a href="https://www.facebook.com/gnigames/" target="_blank" rel="noopener">
         <img src="https://www.gnigame.co.kr/wp-content/uploads/2018/04/footer-icon-facebook.png" alt=""/></a>
@@ -28,18 +28,18 @@ export default {
 }
 </script>
 <style>
-    #sns{
+    #footer{
         background-color: black;
         width: 100%;
         height: 100%;
         text-align: center;
         padding-bottom: 50px;
     }
-    #sns div{
+    #footer div{
         display: inline-block;
         padding:auto;
     }
-    #sns img{
+    #footer img{
         margin:20px;
     }
     body{

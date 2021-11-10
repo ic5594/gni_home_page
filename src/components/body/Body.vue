@@ -1,5 +1,5 @@
 <template>
-    <div id="app2">
+    <div id="body">
         <Imageslider></Imageslider>
         <Kidservice></Kidservice>
         <Gnianime></Gnianime>
