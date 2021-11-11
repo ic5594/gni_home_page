@@ -1,7 +1,6 @@
 <template>
     <div id="header">
       <router-link to="/" id="title"><img src="https://www.gnigame.co.kr/wp-content/uploads/2018/08/logo-white2.png" alt="logo" width="150" height="30"/></router-link>
-        
           <ul class="menu">
           <li @mouseover="dropdwon = true" @mouseleave="dropdwon = false">
             <a href="#" id="games">Games v</a>
@@ -20,8 +19,7 @@
           <li><a class="nmenu"><router-link to="/comics">COMICS</router-link></a></li>
           <li><a class="nmenu"><router-link to="/event">EVENT</router-link></a></li>
           <li><a class="nmenu"><router-link to="/faq">FAQ</router-link></a></li>
-        </ul>
-      
+        </ul>    
     </div>
 </template>
 <script>
@@ -64,6 +62,7 @@ li{
   display: flex;
   justify-content: space-between;
   height: 80px;
+  
 }
 #header a{
   font-weight: 2000;
@@ -112,4 +111,5 @@ a{
 .fade-enter, .fade-leave-active {
   opacity: 0;
 }
+
 </style>
