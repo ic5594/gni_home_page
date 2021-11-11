@@ -5,13 +5,13 @@
                 <p>지니게임은 다양한 이벤트로 여러분의 사랑에 보답하고자<br> 노력하고
                 있습니다.
                 오늘도 지니게임과 함께 신나는 하루를 보내세요!</p>
-                <Button message="이벤트 참여 →"></Button>
+                <router-link to="/event"><Button message="이벤트 참여 →"></Button></router-link>
         </div>
         <div id="event2">
             <span>고객지원</span>
                 <p>지니게임은 고객의 목소리에 귀 기울입니다.<br>
                 여러분의 목소리는 지니게임을 더욱 성장시킬 수 있습니다.</p>
-                <Button message="무엇을 도와드릴까요? →"></Button>
+                <router-link to="/faq"><Button message="무엇을 도와드릴까요? →"></Button></router-link>
         </div>
     </div>
 </template>
