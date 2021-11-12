@@ -2,31 +2,31 @@
    <div id="navi">
         <div v-bind:key="number in [currentNumber]" transition="fade">
             <navi-gate id="navi-gate">
-                <img :src="images[currentNumber%images.length]" witdh="800px" height="600px"/>
+                <img :src="images[Math.abs(currentNumber) % images.length]" witdh="800px" height="600px"/>
             </navi-gate>
-                <span v-on:click="next" id="next-img">&lang;</span>
-                <span v-on:click="prev" id="prev-img">&rang;</span>
+                <span v-on:click="prev" id="next-img">&lang;</span>
+                <span v-on:click="next" id="prev-img">&rang;</span>
+                
         </div>
     </div>
 </template>
 <script>
 export default {
     el: 'image-slider',
-    name:"starbody3",
-    props:'navGate',
-    data: function(){
+    props:['navGate'],
+    data:function(){
         return{
-            images: ['navGate'],
+            images: this.navGate,
             currentNumber: 0,
             timer:null,
-            };
+        };
     },
 
     methods: {
-        next: function() {
+        prev: function() {
             this.currentNumber += 1
         },
-        prev: function() {
+        next: function() {
             this.currentNumber -= 1
         }
     }
