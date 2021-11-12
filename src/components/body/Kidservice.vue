@@ -24,7 +24,7 @@ export default {
         margin-left: 18%;
         margin-top: 30px;
         height: 310px;
-        
+        width:100%;
     }
     #service span{
         display: inline-block;
