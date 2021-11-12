@@ -12,7 +12,7 @@ export default {
 </script>
 <style>
   button{
-        width: 150px;
+        
         height: 45px;
         font-family: 'Roboto', sans-serif;
         font-size: 15px;
