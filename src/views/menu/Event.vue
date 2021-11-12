@@ -1,6 +1,8 @@
 <template>
-    <div id='event'>
-        <h1>EVENT</h1>
+    <div id='eventpage'>
+        
+        <h1><u>EVENT</u></h1>
+        <body></body>
         <Footer></Footer>
     </div>
 </template>
@@ -13,5 +15,16 @@ export default {
 }
 </script>
 <style>
-    
+    #eventpage{
+        
+        height: 100%;
+    }
+    body{
+        background-color: white;
+        height:640px
+    }
+    #eventpage h1{
+        text-decoration: wavy;
+        text-align: center;
+    }
 </style>
