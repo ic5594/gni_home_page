@@ -62,7 +62,10 @@ li{
   display: flex;
   justify-content: space-between;
   height: 80px;
-  
+  width:100%;
+  position:sticky;
+  z-index: 1;
+  top: 0;
 }
 #header a{
   font-weight: 2000;
@@ -111,5 +114,7 @@ a{
 .fade-enter, .fade-leave-active {
   opacity: 0;
 }
-
+body{
+  padding-top: 80px;
+}
 </style>
