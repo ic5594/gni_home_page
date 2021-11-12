@@ -1,14 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Index from '../components/Index.vue'
 import Turnover from '../views/dropdown/turnover/Turnover.vue'
 import Starmonmaster from '../views/dropdown/starmonmaster/Starmonmaster.vue'
-import Legendofhero from '../views/dropdown/Legendofhero.vue'
-import Monsteroffencehero from '../views/dropdown/Monsteroffencehero.vue'
-import Goldrunner from '../views/dropdown/Goldrunner.vue'
-import Toyracing from '../views/dropdown/Toyracing.vue'
-import Kids from '../views/menu/Kids.vue'
-import Comics from '../views/menu/Comics.vue'
+import Legendofhero from '../views/dropdown/legendofhero/Legendofhero.vue'
+import Monsteroffencehero from '../views/dropdown/monsteroffence/Monsteroffencehero.vue'
+import Goldrunner from '../views/dropdown/goldrunner/Goldrunner.vue'
+import Toyracing from '../views/dropdown/toyracing/Toyracing.vue'
+import Kids from '../views/menu/kids/Kids.vue'
+import Comics from '../views/menu/comics/Comics.vue'
 import Event from '../views/menu/Event.vue'
 import Faq from '../views/menu/Faq.vue'
 
@@ -19,8 +19,8 @@ const router = new VueRouter({
     base: process.env.BASE_URL,
     routes: [{
             path: '/',
-            name: 'Home',
-            component: Home
+            name: 'Index',
+            component: Index
         },
         {
             path: '/turnover',
