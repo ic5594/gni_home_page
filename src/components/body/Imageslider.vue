@@ -4,6 +4,7 @@
             <image-slider id="image-slider">
                 <img :src="images[currentNumber%images.length]" v-on:mouseover="stopRotation" v-on:mouseout="startRotation"/>
             </image-slider>
+            
         </div>
     </div>
 </template>
@@ -47,6 +48,9 @@ export default {
 }
 </script>
 <style> 
+#image-slider{
+    width:100%;
+}
     image-slider{
         max-width: 100%;
     }
