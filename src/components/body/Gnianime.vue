@@ -6,7 +6,7 @@
         걱정하지 마세요~ 이제 TV에서 만화를 만날 수 있습니다.<br>
         '지니만화'가 여러분의 갈증을 당장 풀어드릴게요!</p>
         <img src="https://www.gnigame.co.kr/wp-content/uploads/2018/04/home-service-comics-1.jpg" width="600" height="380">
-        <router-link to='/comics'><Button message="자세히 보기 →"></Button></router-link>         
+        <Button message="자세히 보기 →" routerlink="/comics"></Button>         
     </div>       
 </template>
 

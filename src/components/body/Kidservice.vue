@@ -5,7 +5,7 @@
         <p>놀라지마세요! 지니게임에는 어린이를 위한 서비스도 가득합니다.<br>
         '지니키즈팝','타요와 신나는 놀이'등 어린이들과 온 가족이 함께 즐<br>
         길 수 있는 재미있는 놀이로 여러분의 거실을 웃음으로 가득 채워줄<br>것입니다.</p>
-        <router-link to='/kids'><Button message="자세히보기 →"></Button></router-link>
+        <Button message="자세히보기 →" routerlink="/kids"></Button>
     </div>
 
 </template>
@@ -14,8 +14,7 @@ import Button from '../Button.vue'
 export default {
     components:{
         'Button':Button
-    },
-   
+    }
     
 }
 </script>
