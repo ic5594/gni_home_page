@@ -2,9 +2,10 @@
      <div v-bind:key="number in [currentNumber]" transition="fade">
         <div>
             <image-slider id="image-slider">
-                <img :src="images[currentNumber%images.length]" v-on:mouseover="stopRotation" v-on:mouseout="startRotation"/>
+                <img :src="images[Math.abs(currentNumber)%images.length]" v-on:mouseover="stopRotation" v-on:mouseout="startRotation"/>
+            <span v-on:click="prev" id="next-img">&lang;</span>
+            <span v-on:click="next" id="prev-img">&rang;</span>
             </image-slider>
-            
         </div>
     </div>
 </template>
@@ -29,7 +30,7 @@ export default {
 
     methods: {
         startRotation: function() {
-            this.timer = setInterval(this.next, 2000);
+            this.timer = setInterval(this.next, 4000);
         },
 
         stopRotation: function() {
@@ -51,18 +52,52 @@ export default {
 #image-slider{
     width:100%;
 }
-    image-slider{
-        max-width: 100%;
-    }
-   .fade-transition {
-  transition: all 0.8s ease;
-  overflow: hidden;
-  visibility: visible;
-  opacity: 1;
-  position: absolute;
+image-slider{
+    max-width: 100%;
+}
+.fade-transition {
+    transition: all 0.8s ease;
+    overflow: hidden;
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
 }
 .fade-enter, .fade-leave {
-  opacity: 0;
-  visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
+}
+#image-slider span{ 
+    background-color: transparent; 
+    color: white; 
+    text-align: center; 
+    border-radius: 50%; 
+    padding: 10px 20px; 
+    top: 50%; 
+    font-size: 1.3em; 
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1);
+}
+#image-slider span:hover{ 
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+#image-slider #prev-img{
+    position: relative;
+    left:1800px;
+    user-select: none; /* standard syntax */
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+}
+#image-slider #next-img{
+    position: relative;
+    left:3px;
+    user-select: none; /* standard syntax */
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
 }
 </style>
