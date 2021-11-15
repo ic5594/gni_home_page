@@ -2,7 +2,7 @@
     <div id="header">
       <router-link to="/" id="title"><img src="https://www.gnigame.co.kr/wp-content/uploads/2018/08/logo-white2.png" alt="logo" width="150" height="30"/></router-link>
           <ul class="menu">
-          <li @mouseover="dropdwon = true" @mouseleave="dropdwon = false">
+          <li v-on:mouseover="mouseOver" v-on:mouseleave="mouseOut">
             <a href="#" id="games">Games v</a>
              <transition name="fade">
                <ul v-if="dropdwon" @click="dropdwon = false">
@@ -28,7 +28,15 @@ export default{
       return {
        dropdwon:false
       };
-  }   
+  },
+  methods:{
+    mouseOver: function(){
+      this.dropdwon=true
+    },
+    mouseOut:function(){
+      this.dropdwon=false
+    }
+  }
 }
 </script>
 <style>
@@ -64,7 +72,7 @@ li{
   height: 80px;
   width:100%;
   position:sticky;
-  z-index: 1;
+  z-index: 100;
   top: 0;
 }
 #header a{
@@ -108,12 +116,10 @@ a{
 .menu li ul li:hover {
   background: #444;
 }
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .2s;
+.fade-enter-active{
+  transition: opacity .4s;
 }
-.fade-enter, .fade-leave-active {
-  opacity: 0;
-}
+
 body{
   padding-top: 80px;
 }
