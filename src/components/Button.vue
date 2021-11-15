@@ -1,18 +1,15 @@
 <template>
     <div id='button'>
-        <button>{{message}}</button>
+        <router-link :to="routerlink"><button>{{message}}</button></router-link>
     </div>
 </template>
 <script>
 export default {
-    props:{
-        message:String
-    }
+    props:['message','routerlink']
 }
 </script>
 <style>
   button{
-        
         height: 45px;
         font-family: 'Roboto', sans-serif;
         font-size: 15px;
