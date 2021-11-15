@@ -1,18 +1,12 @@
 <template>
     <div id='eventpage'>
-        
-        <h1><u>EVENT</u></h1>
+         <h1><u>EVENT</u></h1>
         <body></body>
-        <Footer></Footer>
+        
     </div>
 </template>
 <script>
-import Footer from '../../components/footer/Footer.vue'
-export default {
-    components:{
-        'Footer':Footer
-    }
-}
+
 </script>
 <style>
     #eventpage{
