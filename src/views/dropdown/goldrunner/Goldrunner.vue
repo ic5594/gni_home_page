@@ -4,22 +4,23 @@
         <Goldbody1></Goldbody1>
         <Goldbody2></Goldbody2>
         <Goldbody3></Goldbody3>
-        <Footer></Footer>
+        <Goldbody4></Goldbody4>
     </div>
 </template>
 <script>
-import Footer from '/src/components/footer/Footer.vue'
+
 import Goldbody1 from './GoldBody1.vue'
 import Goldbody2 from './GoldBody2.vue'
 import Goldbody3 from './GoldBody3.vue'
-
+import Goldbody4 from './GoldBody4.vue'
 
 export default {
     components:{
-        'Footer':Footer,
+
         'Goldbody1':Goldbody1,
         'Goldbody2':Goldbody2,
-        'Goldbody3':Goldbody3
+        'Goldbody3':Goldbody3,
+        'Goldbody4':Goldbody4
     }
 }
 </script>

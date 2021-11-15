@@ -4,21 +4,21 @@
         <LegendBody1></LegendBody1>
         <LegendBody2></LegendBody2>
         <LegendBody3></LegendBody3> 
-        <Footer></Footer>
+        <LegendBody4></LegendBody4>
     </div>
 </template>
 <script>
-import Footer from '/src/components/footer/Footer.vue'
 import LegendBody1 from './LegendBody1.vue'
 import LegendBody2 from './LegendBody2.vue'
 import LegendBody3 from './LegendBody3.vue'
+import LegendBody4 from './LegendBody4.vue'
 
 export default {
     components:{
-        'Footer':Footer,
         'LegendBody1':LegendBody1,
         'LegendBody2':LegendBody2,
-        'LegendBody3':LegendBody3
+        'LegendBody3':LegendBody3,
+        'LegendBody4':LegendBody4
     }
 }
 </script>

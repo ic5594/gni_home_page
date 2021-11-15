@@ -10,7 +10,7 @@ export default {
     components: { 
             'Navigate':Navigate
         }, 
-        data: function () { 
+        data: function (){  
             return { 
                 imgUrl: [
                     "https://www.gnigame.co.kr/wp-content/uploads/2018/05/Toyracing-gallery1.jpg",

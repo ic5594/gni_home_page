@@ -4,21 +4,23 @@
         <ToyBody1></ToyBody1>
         <ToyBody2></ToyBody2>
         <ToyBody3></ToyBody3> 
-        <Footer></Footer>
+        <ToyBody4></ToyBody4>
     </div>
 </template>
 <script>
-import Footer from '/src/components/footer/Footer.vue'
+
 import ToyBody1 from './ToyBody1.vue'
 import ToyBody2 from './ToyBody2.vue'
 import ToyBody3 from './ToyBody3.vue'
+import ToyBody4 from './ToyBody4.vue'
 
 export default {
     components:{
-        'Footer':Footer,
+        
         'ToyBody1':ToyBody1,
         'ToyBody2':ToyBody2,
-        'ToyBody3':ToyBody3
+        'ToyBody3':ToyBody3,
+        'ToyBody4':ToyBody4
     }
 }
 </script>
