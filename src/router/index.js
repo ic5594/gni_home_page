@@ -55,22 +55,26 @@ const router = new VueRouter({
         {
             path: '/kids',
             name: 'Kids',
-            component: Kids
+            component: Kids,
+            props: true
         },
         {
             path: '/comics',
             name: 'Comics',
-            component: Comics
+            component: Comics,
+            props: true
         },
         {
             path: '/event',
             name: 'Event',
-            component: Event
+            component: Event,
+            props: true
         },
         {
             path: '/faq',
             name: 'Faq',
-            component: Faq
+            component: Faq,
+            props: true
         },
 
     ]
