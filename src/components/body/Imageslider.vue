@@ -40,9 +40,13 @@ export default {
        
         next: function() {
             this.currentNumber += 1
+            if(this.currentNumber>=this.images.length)
+                this.currentNumber=0
         },
         prev: function() {
             this.currentNumber -= 1
+            if(this.currentNumber<=0)
+                this.currentNumber=this.images.length-1
         }
     }
 
