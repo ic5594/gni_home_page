@@ -2,7 +2,8 @@
      <div v-bind:key="number in [currentNumber]" transition="fade">
         <div>
             <image-slider id="image-slider">
-                <img :src="images[Math.abs(currentNumber)%images.length]" v-on:mouseover="stopRotation" v-on:mouseout="startRotation"/>
+                <img :src="images[Math.abs(currentNumber)%images.length]"
+                 v-on:mouseover="stopRotation" v-on:mouseout="startRotation"/>
             <span v-on:click="prev" id="next-img">&lang;</span>
             <span v-on:click="next" id="prev-img">&rang;</span>
             </image-slider>
