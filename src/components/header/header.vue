@@ -19,7 +19,7 @@
           <li><a class="nmenu"><router-link to="/comics">COMICS</router-link></a></li>
           <li><a class="nmenu"><router-link to="/event">EVENT</router-link></a></li>
           <li><a class="nmenu"><router-link to="/faq">FAQ</router-link></a></li>
-        </ul>    
+        </ul>      
     </div>
 </template>
 <script>
@@ -60,7 +60,6 @@ export default{
   font-weight: bold;
   color:#999999; 
   font-size: 14px;
-  
 }
 li{
   height: 41px;
@@ -95,8 +94,7 @@ li{
   left:0px;
   top: 50px;
   margin: 0;
-  padding: 0;
-  
+  padding: 0; 
 }
 .menu li {
   display:block;
@@ -111,7 +109,6 @@ a{
 .menu li ul li{
   width:95%;
   height: 100%;
-
 }
 .menu li ul li:hover {
   background: #444;
